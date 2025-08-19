@@ -1,0 +1,21 @@
+ID,Name,Category Index,Quantity,Price,Reorder Level
+P001,Laptop,0,10,999.99,5
+P002,Smartphone,0,3,799.99,5
+P003,T-Shirt,1,25,19.99,10
+P004,Jeans,1,12,49.99,8
+P005,Vacuum Cleaner,2,8,149.99,3
+P006,Blender,2,6,89.99,2
+P007,Apples,3,50,0.99,20
+P008,Milk,3,15,1.89,10
+P009,Novel,4,12,14.95,5
+P010,Textbook,4,5,89.5,2
+P011,Action Figure,5,5,24.99,2
+P012,Board Game,5,7,34.95,3
+P013,Basketball,6,15,29.99,5
+P014,Tennis Racket,6,4,59.99,3
+P015,Lipstick,7,30,9.99,10
+P016,Shampoo,7,18,5.99,8
+P017,Car Oil,8,18,25.5,7
+P018,Wiper Blades,8,6,14.75,5
+P019,Notebook,9,40,2.5,15
+P020,Storage Box,9,10,7.25,5

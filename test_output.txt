@@ -1,0 +1,79 @@
+=== DEMO OUTPUT (Automated) ===
+Initial inventory:
+ID       Name                 Category          Qty      Price     ReorderLvl
+--------------------------------------------------------------------------
+P001     Laptop               Electronics        10     999.99              5
+P002     Smartphone           Electronics         3     799.99              5
+P003     T-Shirt              Clothing           25      19.99             10
+P004     Jeans                Clothing           12      49.99              8
+P005     Vacuum Cleaner       Home                8     149.99              3
+P006     Blender              Home                6      89.99              2
+P007     Apples               Grocery            50       0.99             20
+P008     Milk                 Grocery            15       1.89             10
+P009     Novel                Books              12      14.95              5
+P010     Textbook             Books               5      89.50              2
+P011     Action Figure        Toys                5      24.99              2
+P012     Board Game           Toys                7      34.95              3
+P013     Basketball           Sports             15      29.99              5
+P014     Tennis Racket        Sports              4      59.99              3
+P015     Lipstick             Beauty             30       9.99             10
+P016     Shampoo              Beauty             18       5.99              8
+P017     Car Oil              Automotive         18      25.50              7
+P018     Wiper Blades         Automotive          6      14.75              5
+P019     Notebook             Others             40       2.50             15
+P020     Storage Box          Others             10       7.25              5
+
+
+Search: 'Electronics'
+ID       Name                 Category          Qty      Price     ReorderLvl
+--------------------------------------------------------------------------
+P001     Laptop               Electronics        10     999.99              5
+P002     Smartphone           Electronics         3     799.99              5
+
+
+Search: 'Apples'
+ID       Name                 Category          Qty      Price     ReorderLvl
+--------------------------------------------------------------------------
+P007     Apples               Grocery            50       0.99             20
+
+
+Sell P002 x2 (expect success)
+Sale successful.
+ID       Name                 Category          Qty      Price     ReorderLvl
+--------------------------------------------------------------------------
+P002     Smartphone           Electronics         1     799.99              5
+
+
+Sell P002 x10 (expect fail if not enough stock)
+Sale failed.
+ID       Name                 Category          Qty      Price     ReorderLvl
+--------------------------------------------------------------------------
+P002     Smartphone           Electronics         1     799.99              5
+
+
+Restock P004 by 7 (expect success)
+Restock successful.
+ID       Name                 Category          Qty      Price     ReorderLvl
+--------------------------------------------------------------------------
+P004     Jeans                Clothing           19      49.99              8
+
+
+Add PRD100 Camera (Electronics, qty=5, price=250.0, reorder=2)
+ID       Name                 Category          Qty      Price     ReorderLvl
+--------------------------------------------------------------------------
+PRD100   Camera               Electronics         5     250.00              2
+
+
+Remove P003 (T-Shirt)
+Product removed.
+
+Low Stock Report:
+=== Low Stock Items ===
+ID       Name                 Category          Qty      Price     ReorderLvl
+--------------------------------------------------------------------------
+P002     Smartphone           Electronics         1     799.99              5
+
+
+Inventory Summary:
+Total number of products: 20
+Total quantity of all products: 284
